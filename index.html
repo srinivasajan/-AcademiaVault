@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus Guide - Semester Resources</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1>📚 AcademiaVault</h1>
+                    <p class="tagline">Centralized Academic Resource Library</p>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <span class="search-icon">🔍</span>
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="search-input" 
+                            placeholder="Search subjects, semesters, topics..."
+                            autocomplete="off"
+                        />
+                        <button class="search-clear" id="clearSearch" style="display: none;">✕</button>
+                    </div>
+                    <div class="search-results" id="searchResults" style="display: none;"></div>
+                </div>
+                
+                <div class="quick-actions">
+                    <button class="quick-btn" onclick="showSemester(5)" title="Go to Semester 5">
+                        <span>Sem 5</span>
+                    </button>
+                    <button class="quick-btn" onclick="showAllSemesters()" title="View All Semesters">
+                        <span>All</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="semester-tabs">
+            <button class="tab-button" onclick="showSemester(1)">Sem 1</button>
+            <button class="tab-button" onclick="showSemester(2)">Sem 2</button>
+            <button class="tab-button" onclick="showSemester(3)">Sem 3</button>
+            <button class="tab-button" onclick="showSemester(4)">Sem 4</button>
+            <button class="tab-button active" onclick="showSemester(5)">Sem 5</button>
+            <button class="tab-button" onclick="showSemester(6)">Sem 6</button>
+            <button class="tab-button" onclick="showSemester(7)">Sem 7</button>
+            <button class="tab-button" onclick="showSemester(8)">Sem 8</button>
+        </div>
+
+        <div class="semester-content">
+            <!-- Semester 1 -->
+            <div id="sem1" class="semester-panel">
+                <h2>Semester 1</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 1</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 2</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 3</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semester 2 -->
+            <div id="sem2" class="semester-panel">
+                <h2>Semester 2</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 1</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 2</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 3</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semester 3 -->
+            <div id="sem3" class="semester-panel">
+                <h2>Semester 3</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 1</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 2</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 3</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semester 4 -->
+            <div id="sem4" class="semester-panel">
+                <h2>Semester 4</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 1</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 2</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 3</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semester 5 - DEFAULT & FEATURED -->
+            <div id="sem5" class="semester-panel active featured">
+                <div class="featured-badge">
+                    <span>⭐ Current Semester</span>
+                </div>
+                <h2>Semester 5</h2>
+                <div class="subjects-grid">
+                    <a href="https://drive.google.com/drive/u/0/folders/1eTzDlCIQ_k1bNfsQSJB_1MpwxgXIlS-u" target="_blank" class="subject-card" data-subject="artificial intelligence" data-code="ai" data-semester="5">
+                        <div class="subject-icon">🤖</div>
+                        <h3>Artificial Intelligence</h3>
+                        <p class="subject-code">AI</p>
+                        <span class="arrow">→</span>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/u/0/folders/1_Tq3dEvPJQaAEEcdlVrEaZI9h6p9KEUd" target="_blank" class="subject-card" data-subject="amazon web services cloud computing aws" data-code="aws" data-semester="5">
+                        <div class="subject-icon">☁️</div>
+                        <h3>Amazon Web Services</h3>
+                        <p class="subject-code">AWS</p>
+                        <span class="arrow">→</span>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/u/0/folders/12M36AAWDMPNQcaULmkUc5y_Q_PQJsPAV" target="_blank" class="subject-card" data-subject="data analytics visualization dadv" data-code="dadv" data-semester="5">
+                        <div class="subject-icon">📊</div>
+                        <h3>Data Analytics & Visualization</h3>
+                        <p class="subject-code">DADV</p>
+                        <span class="arrow">→</span>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/u/0/folders/1245yjZE7ysYCHhIt3KyDQu53hh0u27Nw" target="_blank" class="subject-card" data-subject="quantitative research qr" data-code="qr" data-semester="5">
+                        <div class="subject-icon">📈</div>
+                        <h3>Quantitative Research</h3>
+                        <p class="subject-code">QR</p>
+                        <span class="arrow">→</span>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/u/0/folders/1dyM8QKGjcb3qyUWHGeY464yEyPMiBwnL" target="_blank" class="subject-card" data-subject="professional core elective pce" data-code="pce" data-semester="5">
+                        <div class="subject-icon">💻</div>
+                        <h3>Professional Core Elective</h3>
+                        <p class="subject-code">PCE</p>
+                        <span class="arrow">→</span>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/u/0/folders/1gkETdzDQAK5nsRGtN1tZA-4u0Nmgj7Tr" target="_blank" class="subject-card" data-subject="theory of computation toc automata" data-code="toc" data-semester="5">
+                        <div class="subject-icon">⚙️</div>
+                        <h3>Theory of Computation</h3>
+                        <p class="subject-code">TOC</p>
+                        <span class="arrow">→</span>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/u/0/folders/1AjzdXePNa5eWTIOgH0P0eSEr_3D_FYL2" target="_blank" class="subject-card" data-subject="enterprise programming java epj j2ee spring" data-code="epj" data-semester="5">
+                        <div class="subject-icon">☕</div>
+                        <h3>Enterprise Programming with Java</h3>
+                        <p class="subject-code">EPJ</p>
+                        <span class="arrow">→</span>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/u/0/folders/1aMNx0ATL0j3s43tYyfTwbzA3DZ4qwD__" target="_blank" class="subject-card" data-subject="software engineering se sdlc agile" data-code="se" data-semester="5">
+                        <div class="subject-icon">🔧</div>
+                        <h3>Software Engineering</h3>
+                        <p class="subject-code">SE</p>
+                        <span class="arrow">→</span>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/u/0/folders/1WLLTU43lMgfPbJ8_zfdeB6nkfZvVSsLd" target="_blank" class="subject-card other" data-subject="other resources miscellaneous" data-code="other" data-semester="5">
+                        <div class="subject-icon">📁</div>
+                        <h3>Other Resources</h3>
+                        <p class="subject-code">OTHER</p>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Semester 6 -->
+            <div id="sem6" class="semester-panel">
+                <h2>Semester 6</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 1</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 2</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 3</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semester 7 -->
+            <div id="sem7" class="semester-panel">
+                <h2>Semester 7</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 1</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 2</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 3</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semester 8 -->
+            <div id="sem8" class="semester-panel">
+                <h2>Semester 8</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 1</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 2</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="subject-card placeholder">
+                        <h3>📖 Subject 3</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>💡 Click on any subject card to access the Google Drive resources</p>
+            <p class="footer-info">Use the search bar to quickly find subjects across all semesters</p>
+            <p class="copyright">© 2025 AcademiaVault | All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
